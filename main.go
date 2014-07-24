@@ -8,24 +8,24 @@ import (
   "runtime/debug"
   "runtime/pprof"
   "math/rand"
-  gl "github.com/chsc/gogl/gl21"
-  "github.com/runningwild/glop/gin"
-  "github.com/runningwild/glop/gos"
-  "github.com/runningwild/glop/gui"
-  "github.com/runningwild/memory"
-  "github.com/runningwild/glop/render"
-  "github.com/runningwild/glop/system"
-  "github.com/runningwild/haunts/base"
-  "github.com/runningwild/haunts/game"
-  "github.com/runningwild/haunts/sound"
-  "github.com/runningwild/haunts/house"
+  gl "github.com/jctaylor1/haunts/importResources/gl21"
+  "github.com/jctaylor1/haunts/importResources/gin"
+  "github.com/jctaylor1/haunts/importResources/gos"
+  "github.com/jctaylor1/haunts/importResources/gui"
+  "github.com/jctaylor1/haunts/importResources/memory"
+  "github.com/jctaylor1/haunts/importResources/render"
+  "github.com/jctaylor1/haunts/importResources/system"
+  "github.com/jctaylor1/haunts/base"
+  "github.com/jctaylor1/haunts/game"
+  "github.com/jctaylor1/haunts/sound"
+  "github.com/jctaylor1/haunts/house"
 
   // Need to pull in all of the actions we define here and not in
   // haunts/game because haunts/game/actions depends on it
-  _ "github.com/runningwild/haunts/game/actions"
-  _ "github.com/runningwild/haunts/game/ai"
+  _ "github.com/jctaylor1/haunts/game/actions"
+  _ "github.com/jctaylor1/haunts/game/ai"
 
-  "github.com/runningwild/haunts/game/status"
+  "github.com/jctaylor1/haunts/game/status"
 )
 
 var (
